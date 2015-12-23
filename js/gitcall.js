@@ -17,7 +17,7 @@ $(function(){
         var username   = data.login;
         var reposnum   = data.public_repos;
         
-        var outhtml = '<ul>'+ "";
+        var outhtml = '<ul><div>'+ "Repos:" + reposnum;
         var repositories;
         $.getJSON(repourl, function(data){
           repositories = data;   
@@ -38,3 +38,4 @@ $(function(){
       } 
     }); 
   }); 
+  
